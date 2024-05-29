@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         pip install fpdf
-        # pip install pyinstaller
+        pip install pyinstaller
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
@@ -39,4 +39,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest Savage\ Char\ Generator\ 0_4_9_2.py
-        //pyinstaller Savage\ Char\ Generator\ 0_4_9_2.py
+        pyinstaller Savage\ Char\ Generator\ 0_4_9_2.py
